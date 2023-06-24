@@ -1,4 +1,5 @@
-import { createContext, useReducer } from "react";
+import { createContext,useReducer } from "react";
+import React from "react";
 import axios from "axios";
 
 import {  FETCH_PROFILE_FAIL,
@@ -123,8 +124,6 @@ import { API_URL_USER } from "../../utils/apiURL";
            })
         }};
 
-
-
 //login user
 const loginUserAction= async (formData)=>{
     const config={
@@ -189,7 +188,7 @@ const fetchProfileAction= async ()=> {
     window.location.href='/login';
  }
     return <authContext.Provider value={{ 
-          loginUserAction,
+        loginUserAction,
         userAuth: state,
         fetchProfileAction,
         profile: state?.profile,

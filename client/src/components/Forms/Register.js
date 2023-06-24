@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { authContext } from "../Context/AuthContext/AuthContext";
 
 const Register = () => {
-  const {registerUserAction, error} =useContext(authContext);
+  // const {registerUserAction, error} =useContext(authContext);
   const [formData, setFormData]= useState({
     email: "",
     fullname:"",
@@ -20,11 +20,11 @@ const Register = () => {
 if(!email || !password || !fullname)
 return alert("Please provide all the detials");
 
-  registerUserAction(formData);
+  // registerUserAction(formData);
  };
   return (
     <>
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-[#99A3A4]">
         <div className="container px-4 mx-auto">
           <div className="max-w-sm mx-auto">
             <div className="mb-6 text-center">
@@ -97,7 +97,7 @@ return alert("Please provide all the detials");
                 </div>
               </div>
               <button 
-                className="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
+                className="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-sky-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
                 type="submit"
               >
                 Sign Up
@@ -107,7 +107,7 @@ return alert("Please provide all the detials");
                  Already have an account?
                 </span>
                 <Link
-                  className="inline-block text-xs font-medium text-green-500 hover:text-green-600 hover:underline"
+                  className="inline-block text-xs font-medium text-[#F5B041]-500 hover:text-green-600 hover:underline"
                   type="submit" to='/login'
                 >
                   Sign in
