@@ -11,19 +11,27 @@ The implemented features are
 In the given deadline it was difficult to add more features. We have tried our best to build this.
 
 
-Home page
+**Home page**
+
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/6f5b7a1a-ef85-4524-bae3-b34802cdee67)
 
-Services
+
+**Services**
+
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/21521c93-ecaf-447d-ab2d-c1bab4cd71b3)
 
-Register form
+
+**Register form**
+
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/30c45c81-0cfd-496c-bd81-5fa2c179f135)
 
-Profile
+
+**Profile**
+
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/81ca4904-6a15-46c2-a058-9a185e848259)
 
-Feedback
+**Feedback**
+
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/475da12e-89b1-4a6b-9904-45bd2c2923e4)
 
 
