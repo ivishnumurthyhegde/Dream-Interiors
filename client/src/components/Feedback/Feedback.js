@@ -1,28 +1,9 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { authContext } from "../Context/AuthContext/AuthContext";
 
 
-const Register = () => {
-  const {registerUserAction, error} =useContext(authContext);
-  const [formData, setFormData]= useState({
-    email: "",
-    fullname:"",
-    password:"",
-  });
+const Feedback = () => {
 
- const {email, fullname, password}= formData;
-
- const onChangeInput=(e)=>{
-  setFormData({...formData,[e.target.name]: e.target.value });
- };
- const onSubmitHandler=(e)=>{
-  e.preventDefault();
-if(!email || !password || !fullname)
-return alert("Please provide all the detials");
-
-  registerUserAction(formData);
- };
   return (
     <>
       <section className="py-24 md:py-32 bg-white">
@@ -30,11 +11,11 @@ return alert("Please provide all the detials");
           <div className="max-w-sm mx-auto">
             <div className="mb-6 text-center">
               <h3 className="mb-4 text-2xl md:text-3xl font-bold">
-           Register for an account
+                Feedback
               </h3>
-           
+            
             </div>
-            <form onSubmit={onSubmitHandler}
+            <form
         
             >
               <div className="mb-6">
@@ -42,49 +23,28 @@ return alert("Please provide all the detials");
                   className="block mb-2 text-coolGray-800 font-medium"
                   htmlFor
                 >
-                  Email
+                  Name
                 </label>
                 <input
-                 value={email}
-                  onChange={onChangeInput}
                   name="email"
                   className="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lgshadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
                   type="email"
-                  placeholder="example@gmail.com"
+                  placeholder="mr.x"
                 />
               </div>
-
-              <div className="mb-6">
-                <label
-                  className="block mb-2 text-coolGray-800 font-medium"
-                  htmlFor
-                >
-                 Full Name
-                </label>
-                <input
-                  value={fullname}
-                onChange={onChangeInput}
-                  name="fullname"
-                  className="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lgshadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-                  type="text"
-                  placeholder="John Moris"
-                />
-              </div>
-
               <div className="mb-4">
                 <label
                   className="block mb-2 text-coolGray-800 font-medium"
                   htmlFor
                 >
-                  Password
+                  Description
                 </label>
-                <input
-                value={password}
-                onChange={onChangeInput}
+                <textarea
+                rows="5"
                   name="password"
                   className="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lgshadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
                   type="password"
-                  placeholder="************"
+                  placeholder="Your Feedback"
                 />
               </div>
               <div className="flex flex-wrap items-center justify-between mb-6">
@@ -97,21 +57,21 @@ return alert("Please provide all the detials");
                   </label>
                 </div>
               </div>
-              <button 
+              <button
                 className="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
                 type="submit"
               >
-                Sign Up
+                Submit
               </button>
               <p className="text-center">
                 <span className="text-xs font-medium">
-                 Already have an account?
+                  Go back to Home page --
                 </span>
                 <Link
                   className="inline-block text-xs font-medium text-green-500 hover:text-green-600 hover:underline"
-                  type="submit" to='/login'
+                  type="submit" to='/'
                 >
-                  Sign in
+                  Home
                 </Link>
               </p>
             </form>
@@ -122,4 +82,4 @@ return alert("Please provide all the detials");
   );
 };
 
-export default Register;
+export default Feedback;

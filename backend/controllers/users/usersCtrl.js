@@ -64,7 +64,7 @@ const userProfileCtrl = async (req, res) => {
   console.log(req.user);
 
   try {
-    const user = await User.findById(req.user);
+    const user = await User.findById(req.user).populate('servicesBooked');
     res.json(user);
   } catch (error) {
     console.log(new AppErr(error.message, 500));

@@ -3,7 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './components/Forms/Register';
 import Login from './components/Forms/Login';
 import Navbar from './components/NavBar/Navbar';
-import Home from './components/Home/Home';
+import HomePage from './components/HomePage/HomePage'
+import BookService from './components/Forms/BookService';
+import Profile from './components/Profile/Profile';
+import Feedback from './components/Feedback/Feedback';
 
 
 function App() {
@@ -12,9 +15,12 @@ function App() {
      <BrowserRouter>
       <Navbar />
         <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/feedback' element={<Feedback />} />
+        <Route path='/services/book' element={<BookService />} />
         </Routes>
       </BrowserRouter>
 

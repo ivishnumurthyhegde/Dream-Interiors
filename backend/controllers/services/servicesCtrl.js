@@ -18,7 +18,7 @@ const bookServiceCtrl = async (req, res, next) => {
       createdBy: req.user,
     });
     //3push the service into users services field
-    userFound.servicesBooked.push(service._id);
+    userFound.servicesBooked.push(service.name);
     //4. resave the user
     await userFound.save();
     res.json({

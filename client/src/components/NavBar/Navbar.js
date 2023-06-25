@@ -1,6 +1,5 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { authContext } from "../Context/AuthContext/AuthContext";
@@ -29,14 +28,14 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://img.freepik.com/free-vector/indian-rupee-tree_23-2147990480.jpg?w=740&t=st=1684315451~exp=1684316051~hmac=0daf92bbed8bbf7611477a0bdd474f5c0832a7efe32fbe9652ac11575722b341"
-                    alt="Incone-expense-tracker"
+                    className="block h-14 w-auto lg:hidden"
+                    src="https://imgtr.ee/images/2023/06/25/dZRTb.png"
+                    alt="Dream Interiors"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://img.freepik.com/free-vector/indian-rupee-tree_23-2147990480.jpg?w=740&t=st=1684315451~exp=1684316051~hmac=0daf92bbed8bbf7611477a0bdd474f5c0832a7efe32fbe9652ac11575722b341"
-                    alt="Income-expense-tracker"
+                    className="hidden h-14 w-auto lg:block"
+                    src="https://imgtr.ee/images/2023/06/25/dZRTb.png"
+                    alt="Dream Interiors"
                   />
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
@@ -46,19 +45,28 @@ export default function Navbar() {
                   >
                     Home
                   </Link>
+              
                       {token &&  <>
                     <Link
-                      to="/dashboard/accounts/create"
+                      to="/services/book"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Add Account
+                      Book Service
                     </Link>
                     <Link
-                      to="/dashboard"
+                      to="/profile"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Dashboard
+                     Profile
                     </Link>
+
+                    <Link
+                      to="/feedback"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                    Feedback
+                    </Link>
+
                   </>}
                  
                     {!token && 
