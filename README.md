@@ -30,6 +30,11 @@ In the given deadline it was difficult to add more features. We have tried our b
 
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/81ca4904-6a15-46c2-a058-9a185e848259)
 
+**Book Service**
+
+![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/5dfecb78-0c5c-4986-a023-d91eedde5d07)
+
+
 **Feedback**
 
 ![image](https://github.com/ivishnumurthyhegde/Dream-Interiors/assets/94776260/475da12e-89b1-4a6b-9904-45bd2c2923e4)
