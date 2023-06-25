@@ -1,6 +1,6 @@
 # Dream-Interiors
 
-We have built a Web app for House Construction or Interior design.
+We have built a Web app for House Construction or Interior design services.
 The implemented features are 
 1. User registration
 2. Login / Log out
