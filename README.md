@@ -1,6 +1,8 @@
 # Dream-Interiors
 
 We have built a Web app for House Construction or Interior design services.
+This was built for the TechnoVerse hackathon.
+
 The implemented features are 
 1. User registration
 2. Login / Log out
